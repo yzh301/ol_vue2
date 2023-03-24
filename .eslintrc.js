@@ -31,6 +31,7 @@ module.exports = {
         tabWidth: 2,
         // 使用分号
         semi: true,
+        endOfLine: "crlf",
         // 不检查行尾空格
         ignoreWhitespace: true,
       },
