@@ -6,15 +6,27 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "prebuild": "yarn run font",
+    "font": "node scripts/svg2font.js",
     "crm": "vue-cli-service build --mode crm"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "axios": "^1.3.4",
+    "babel-plugin-component": "^1.1.1",
+    "core-js": "^3.29.1",
+    "element-ui": "^2.15.13",
+    "lodash": "^4.17.21",
+    "postcss-html": "^1.5.0",
+    "regenerator-runtime": "^0.13.11",
+    "ol": "^6.15.1",
+    "stylelint-config-standard-vue": "^1.0.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@types/core-js": "^2.5.5",
+    "@types/regenerator-runtime": "^0.13.1",
     "@vue/cli-plugin-babel": "~4.5.12",
     "@vue/cli-plugin-eslint": "~4.5.12",
     "@vue/cli-plugin-router": "~4.5.12",
@@ -22,14 +34,23 @@
     "@vue/cli-service": "~4.5.12",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
+    "image-webpack-loader": "^8.1.0",
     "lint-staged": "^9.5.0",
     "node-sass": "^4.12.0",
     "prettier": "^2.2.1",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "stylelint": "^15.3.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^31.0.0",
+    "stylelint-webpack-plugin": "^4.1.0",
+    "svg-sprite-loader": "^6.0.11",
+    "svgtofont": "^3.23.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-spritesmith": "^1.1.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
