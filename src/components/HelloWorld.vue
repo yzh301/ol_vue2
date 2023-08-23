@@ -15,6 +15,7 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
           target="_blank"
           rel="noopener"
+          style="color: red; background-color: #42b983; border: 1px solid #04c"
         >
           babel
         </a>

@@ -67,7 +67,7 @@ textarea,
 input {
   word-wrap: break-word;
   word-break: break-all;
-  padding: 0px;
+  padding: 0;
 }
 
 /* 清除ul列表标记的样式，ul列表更多的用在不需要列表前置符号的样式里 */
