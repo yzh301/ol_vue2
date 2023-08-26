@@ -1,3 +1,11 @@
+/*
+ * @Author: WuDaoTingFeng.yzh 2683849644@qq.com
+ * @Date: 2023-03-27 21:13:09
+ * @LastEditors: WuDaoTingFeng.yzh 2683849644@qq.com
+ * @LastEditTime: 2023-08-26 21:50:08
+ * @FilePath: \ol_vue2\src\request\request.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import axios from "axios";
 import { Message } from "element-ui";
 import qs from "qs";
@@ -58,6 +66,7 @@ service.interceptors.response.use(
     }
   },
   (error) => {
+    console.log("🚀 ~ file: request.js:61 ~ error:", error);
     console.log("err" + error); // for debug
     Message({
       message: error.message,
